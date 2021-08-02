@@ -14,7 +14,7 @@ namespace DotnetVueSsr
 {
     public class RenderContext
     {
-        static readonly Script libs = new JavaScriptParser(ScriptResource.Load()).ParseScript();
+        static readonly Esprima.Ast.Script libs = new JavaScriptParser(Vue.Load()).ParseScript();
 
         public Engine Engine { get; }
 
